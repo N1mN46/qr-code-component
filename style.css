@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'ZalandoSansExpanded';
+    src: url(assets/fonts/Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/Outfit/Outfit-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --bg: hsl(212, 45%, 89%);
+    --text-lg: hsl(218, 44%, 22%);
+    --text-sm: hsl(216, 15%, 48%);
+    --radius-lg: 1.25rem;
+    --radius-sm: 0.625rem;
+}
+
+body {
+    background-color: var(--bg);
+    display: grid;
+    row-gap: 0;
+    place-content: center;
+    min-height: 80vh;
+    font-family: 'Outfit';
+    padding: clamp(0.2rem, 1vw, 2rem);
+}
+
+main {
+    background-color: var(--white);
+    width: clamp(18rem, 90vw, 20rem);
+    padding: clamp(1rem, 0.75vw, 2.5rem);
+    border-radius: var(--radius-lg);
+    box-shadow: 1rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+img {
+   max-width: 100%;
+   border-radius: var(--radius-sm);
+}
+
+.main-text {
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-weight: bold;
+    color: var(--text-lg);
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.instruction {
+    text-align: center;
+    padding: 0rem 2.1rem;
+    color: var(--text-sm);
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--text-lg); 
+}
